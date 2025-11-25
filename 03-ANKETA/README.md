@@ -1,8 +1,8 @@
-🚀 Homework Projects
+###🚀 Homework Projects
 
 Учебные проекты по фронтенд-разработке. Практическое применение JavaScript, HTML и CSS.
 
-📝 <a href="https://login-nigol.github.io/homework/03-ANKETA/">03-ANKETA</a>
+####📝 <a href="https://login-nigol.github.io/homework/03-ANKETA/">03-ANKETA</a>
 Анкета для сбора и валидации данных пользователя с проверкой ввода и расчётами.
 
 
