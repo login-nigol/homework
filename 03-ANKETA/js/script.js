@@ -57,7 +57,7 @@ function startAnketa() {
   } while (!isValid);
 
   do {
-    let ageInput = prompt("Введите возраст:\nОграничение по возрасту 6+") ?? "";
+    let ageInput = prompt("Введите возраст:\nОграничение по возрасту 7+") ?? "";
 
     if (!ageInput.trim()) {
       alert("Обязательное поле!");
