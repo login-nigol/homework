@@ -1,0 +1,88 @@
+<!--
+Автор: Вадим Антипов
+Дата: 22.11.25
+-->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../03-ANKETA v1.2/css/anketa.css" />
+    <title>Anketa</title>
+  </head>
+  <body>
+    <h1>Анкета</h1>
+    <form id="anketaForm">
+      <div class="form-group">
+        <!-- Группа поля Фамилия -->
+        <label>Фамилия:</label>
+        <!-- атрибут: required - обязательное поле для заполнения -->
+        <!-- атрибут: pattern - проверка букв, браузерная проверка, но пользователь может её обойти -->
+        <input
+          type="text"
+          id="lastName"
+          pattern="[А-Яа-яЁё\s-]+"
+          title="Только русские буквы, пробелы и дефисы"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Имя:</label>
+        <input
+          type="text"
+          id="firstName"
+          pattern="[А-Яа-яЁё\s-]+"
+          title="Только русские буквы, пробелы и дефисы"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Отчество:</label>
+        <input
+          type="text"
+          id="middleName"
+          pattern="[А-Яа-яЁё\s-]+"
+          title="Только русские буквы, пробелы и дефисы"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Возраст (лет):</label>
+        <input
+          type="number"
+          id="age"
+          min="1"
+          title="Введите свой возраст.   Ограничения 12+"
+          required
+        />
+      </div>
+
+      <!-- Модальное окно для пола -->
+      <div id="genderModal" class="modal">
+        <div class="modal-content">
+          <h3>Выберите пол</h3>
+          <p>Ваш пол - мужской?</p>
+          <div class="modal-buttons">
+            <button onclick="selectGender(true)">Да!</button>
+            <button onclick="selectGender(false)">Нет, Женский!</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно для результатов -->
+      <div id="resultModal" class="modal">
+        <div class="modal-content">
+          <h3>Ваша анкета</h3>
+          <pre id="resultText"></pre>
+          <button onclick="closeResultModal()">Закрыть</button>
+        </div>
+      </div>
+
+      <!-- Кнопка вызова функции, НЕ кнопка отправки формы -->
+      <button type="button" onclick="showResults()">Посмотреть анкету</button>
+    </form>
+
+    <script src="03-ANKETA/js/anketa.js"></script>
+  </body>
+</html>
