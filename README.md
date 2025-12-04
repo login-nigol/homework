@@ -3,7 +3,7 @@
 Учебные проекты по фронтенд-разработке. Практическое применение JavaScript, HTML и CSS.
 
 1 - 📝 <a href="https://login-nigol.github.io/homework/03-ANKETA/">03-ANKETA</a><br>
-2 - [🔢]]] → ∑ <a href="https://login-nigol.github.io/homework/05-TREESUM/">05-TREESUM</a><a href="https://login-nigol.github.io/homework/05-TREESUM/">A3-isPalindrome</a>
+2 - [🔢]]] → ∑ <a href="https://login-nigol.github.io/homework/05-TREESUM/">05-TREESUM</a>
 
 🎯 Цели
 - Закрепление теории на практике
