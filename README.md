@@ -1,0 +1,2 @@
+# HOMEWORK
+Практическое применение JavaScript
