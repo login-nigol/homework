@@ -31,19 +31,19 @@ function checkPalindrome(phrase) {
 
 // обработчик на кнопку
 document.getElementById("checkBtn").addEventListener("click", function () {
-const userInput = prompt("Введите фразу для проверки на палиндром:");
+  const userInput = prompt("Введите фразу для проверки на палиндром:");
 
-if (userInput === null) {
-  alert("Вы отменили ввод!");
-  return;
-}
-if (userInput.trim() === "") {
-  alert("Вы ввели пустую строку!");
-  return;
-} else {
-  const isPal = checkPalindrome(userInput);
-  alert(isPal ? "это палиндром!" : "это не палиндром");
-}
+  if (userInput === null) {
+    alert("Вы отменили ввод!");
+    return;
+  }
+  if (userInput.trim() === "") {
+    alert("Вы ввели пустую строку!");
+    return;
+  } else {
+    const isPal = checkPalindrome(userInput);
+    alert(isPal ? "это палиндром!" : "это не палиндром");
+  }
 });
 
 console.log("Тест 3:", checkPalindrome("Привет мир")); // false
